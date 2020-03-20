@@ -44,6 +44,10 @@ This will deploy the docker container holding a Hadoop cluster server and Spark.
 
 ### Build the Spark application
 Use your favorite IDE and build the jar in the spark folder.
+```bash
+# go to the output jar folder
+zip -d spark.jar META-INF/*.RSA META-INF/*.DSA META-INF/*.SF
+```
 
 ### Copy the Jar and dataset into the Hadoop + Spark container
 ```bash
